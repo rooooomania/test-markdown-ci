@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "ls -ltr"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rooooomania/test-markdown-ci/issues"
   },
-  "homepage": "https://github.com/rooooomania/test-markdown-ci#readme"
+  "homepage": "https://github.com/rooooomania/test-markdown-ci#readme",
+  "dependencies": {
+    "marked": "^0.3.6"
+  }
 }
