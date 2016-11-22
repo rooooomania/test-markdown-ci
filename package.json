@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lambci-ls": "ls -ltr"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/rooooomania/test-markdown-ci#readme",
   "dependencies": {
     "marked": "^0.3.6"
+  },
+  "lambci": {
+    "cmd": "npm install && npm run lambci-ls"
   }
 }
