@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha ./test/**/*.spec.js",
     "lambci-ls": "ls -ltr",
-    "lambci-md": "node ./src/markdown-recursive.js"
+    "lambci-md": "node ./index.js"
   },
   "repository": {
     "type": "git",
