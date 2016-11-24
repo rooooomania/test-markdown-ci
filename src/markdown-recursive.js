@@ -102,7 +102,7 @@ var markedDirectory = function markedDirectory(_ref, _ref2) {
   }).then(function (files) {
     return processFiles(files, output);
   }).then(function () {
-    return (0, _s3sync2.default)();
+    return (0, _s3sync2.default)(output);
   }).catch(function (err) {
     return logger(err);
   });

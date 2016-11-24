@@ -15,17 +15,17 @@ const initParams = {
 
 const client = s3.createClient(initParams);
 
-const params = {
-  localDir: './build',
-  deletedRemoved: true,
+const s3sync = (from = './build') => {
+  const params = {
+    localDir: from,
+    deletedRemoved: true,
 
-  s3Params: {
-    Bucket: 'markdown-converter',
-    Prefix: 'artifacts',
-  },
-};
+    s3Params: {
+      Bucket: 'markdown-converter',
+      Prefix: 'artifacts',
+    },
+  };
 
-const s3sync = () => {
   const uploader = client.uploadDir(params);
   uploader.on('error', err => {
     console.log('unable to sync:', err.stack);

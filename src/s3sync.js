@@ -25,17 +25,19 @@ var initParams = {
 
 var client = _s2.default.createClient(initParams);
 
-var params = {
-  localDir: './build',
-  deletedRemoved: true,
-
-  s3Params: {
-    Bucket: 'markdown-converter',
-    Prefix: 'artifacts'
-  }
-};
-
 var s3sync = function s3sync() {
+  var from = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : './build';
+
+  var params = {
+    localDir: from,
+    deletedRemoved: true,
+
+    s3Params: {
+      Bucket: 'markdown-converter',
+      Prefix: 'artifacts'
+    }
+  };
+
   var uploader = client.uploadDir(params);
   uploader.on('error', function (err) {
     console.log('unable to sync:', err.stack);
