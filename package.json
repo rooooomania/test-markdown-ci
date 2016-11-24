@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lambci-ls": "ls -ltr"
+    "test": "cross-env NODE_ENV=test mocha ./test/**/*.spec.js",
+    "lambci-ls": "ls -ltr",
+    "lambci-md": "node ./src/markdown-recursive.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +20,14 @@
   },
   "homepage": "https://github.com/rooooomania/test-markdown-ci#readme",
   "dependencies": {
-    "marked": "^0.3.6"
+    "glob": "^7.1.1",
+    "marked": "^0.3.6",
+    "mkdirp": "^0.5.1"
   },
-  "lambci": {
-    "cmd": "npm install && npm run lambci-ls"
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "expect": "^1.20.2",
+    "mocha": "^3.1.2",
+    "rimraf": "^2.5.4"
   }
 }
