@@ -8,3 +8,6 @@ docs/
 test/docs/
 test/test.spec.js
 test/test.spec.js.map
+build/
+src/s3sync.js
+src/s3sync.js.map
