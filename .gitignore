@@ -1,7 +1,6 @@
 node_modules/
 .idea/*
 .babelrc
-.lambci.js
 md/
 src/markdown-recursive.js
 src/markdown-recursive.js.map
