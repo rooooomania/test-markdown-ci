@@ -19,8 +19,6 @@ var initParams = {
   s3Options: {
     // any other options are passed to new AWS.S3()
     // See: http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html#constructor-property
-    accessKeyId: 'AKIAIUT66NDNL2INRDZQ',
-    secretAccessKey: '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',
     region: 'ap-northeast-1'
   }
 };
