@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha ./test/**/*.spec.js",
+    "test": "mocha ./test/**/*.spec.js",
     "lambci-ls": "ls -ltr",
     "lambci-md": "node ./src/markdown-recursive.js"
   },
