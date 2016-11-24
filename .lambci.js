@@ -1,4 +1,4 @@
   module.exports = {
-    "cmd": "npm install && npm test && npm run lambci-md"
+    "cmd": "npm install && npm run lambci-md"
   };
 

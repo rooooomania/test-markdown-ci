@@ -2,5 +2,4 @@ node_modules/
 .idea/*
 .babelrc
 md/
-docs/
 build/
