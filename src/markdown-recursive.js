@@ -26,6 +26,10 @@ var _mkdirp = require('mkdirp');
 
 var _mkdirp2 = _interopRequireDefault(_mkdirp);
 
+var _s3sync = require('./s3sync');
+
+var _s3sync2 = _interopRequireDefault(_s3sync);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -81,7 +85,7 @@ var markedDirectory = function markedDirectory(_ref, _ref2) {
       _ref3$ = _ref3[0],
       input = _ref3$ === undefined ? '{./docs/**/*.md, ./*.md}' : _ref3$,
       _ref3$2 = _ref3[1],
-      output = _ref3$2 === undefined ? './docsBuild' : _ref3$2;
+      output = _ref3$2 === undefined ? './build' : _ref3$2;
 
   var _ref2$logger = _ref2.logger,
       logger = _ref2$logger === undefined ? console.log : _ref2$logger;
@@ -97,6 +101,8 @@ var markedDirectory = function markedDirectory(_ref, _ref2) {
     });
   }).then(function (files) {
     return processFiles(files, output);
+  }).then(function () {
+    return (0, _s3sync2.default)();
   }).catch(function (err) {
     return logger(err);
   });

@@ -3,6 +3,7 @@ import fs from 'fs';
 import path from 'path';
 import glob from 'glob';
 import mkdirp from 'mkdirp';
+import s3sync from './s3sync';
 
 /*
  * processFiles
@@ -49,7 +50,7 @@ const processFiles = (files, output) => {
 const markedDirectory = (
   [
     input = '{./docs/**/*.md, ./*.md}',
-    output = './docsBuild',
+    output = './build',
   ],
   {
     logger = console.log,
@@ -63,6 +64,7 @@ const markedDirectory = (
       (err ? rej(err) : res(files))
     )
 )).then(files => processFiles(files, output)
+).then(() => s3sync()
 ).catch(err => logger(err));
 
 export default (...args) => markedDirectory.apply(this, [args[0] || [], args[1] || {}]);
