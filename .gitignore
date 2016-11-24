@@ -2,12 +2,5 @@ node_modules/
 .idea/*
 .babelrc
 md/
-src/markdown-recursive.js
-src/markdown-recursive.js.map
 docs/
-test/docs/
-test/test.spec.js
-test/test.spec.js.map
 build/
-src/s3sync.js
-src/s3sync.js.map
