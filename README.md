@@ -44,3 +44,9 @@ Lambdaの[一般的な制約](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg
 1. pull requestを送り、リポジトリ管理者にコミットしてもらう
 1. 結果を`http://markdown-converter.s3-website-ap-northeast-1.amazonaws.com/artifacts/docs/{ファイル名(ディレクトリがあればそれも含める}.html` で確認する。
 
+```sh
+# 動的にファイル一覧を作る
+URL_ESCAPED=$(echo $URL |sed 's/\//\\\//g')
+find . -type file |grep -e "^\./docs/" |grep -e '.*\.md$' | sed 's/^\./'${URL_ESCAPED}'/g' |sed 's/\.md/\.html/g'
+```
+

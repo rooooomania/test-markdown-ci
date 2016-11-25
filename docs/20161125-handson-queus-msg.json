@@ -1,0 +1,10 @@
+{
+    "Messages": [
+        {
+            "Body": "Hello World!", 
+            "ReceiptHandle": "AQEBKvTf9guhrNas17fmqUZbQT9d/gPSUlGvHvGH236P1C+wtWq2iW6ORZyHuhkATkYSeLcmkxUKkjlu8ZkOFbwP4icpF2NXAcWud8BJAY5vs2I+zlfd9cwLXqY1naO9Q2lT0hrVaJaCK6j2nilM1HoPpJymWxWTQNnTQ6dE1VcAN+ZE5IBvMKz1FQW7DpOrRCNMqRbxDy9XeVybDTAnI5/sp0O+gISl5s7/4eym1vbpr/OQDRfZmYuJzy0TqZXv+tzyDhOpjag2i3z7yWcuJo5v3RK//kBpKl4xf/+Zd1iikVkepgdMwjlmCAIiziquIEujlpo0YUWCO3GcU2Ri6QFp8CAqzzO7PsidHp0QqquHbBd/EHcFhRT4a2euKlDtb4BEeTED0JDPFvYAO+nbMpPGtIcVzlMl2dHeQSdqyY+5imI=", 
+            "MD5OfBody": "ed076287532e86365e841e92bfc50d8c", 
+            "MessageId": "f05c109b-b29b-4cba-bb9c-568d25799806"
+        }
+    ]
+}
