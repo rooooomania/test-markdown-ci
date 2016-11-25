@@ -49,7 +49,6 @@ var s3sync = function s3sync() {
     return console.log('done uploading');
   });
 
-  console.log('client is ' + JSON.stringify(client));
   return Promise.resolve();
 };
 

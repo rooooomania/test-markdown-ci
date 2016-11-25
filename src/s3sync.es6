@@ -37,7 +37,6 @@ const s3sync = (from = './build') => {
     console.log('done uploading')
   );
 
-  console.log(`client is ${JSON.stringify(client)}`);
   return Promise.resolve();
 };
 
