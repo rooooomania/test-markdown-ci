@@ -39,7 +39,8 @@ Lambdaの[一般的な制約](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg
 なお、AWSのリソースにアクセスするための手段として、lambda内ではawscliは使えないので各言語のSDKを使わなくてはならない。
 
 ## Demo
-1. このリポジトリからcloneする
+1. このリポジトリをclone/forkする
 1. docs以下のファイルを編集または追加、削除する
+1. pull requestを送り、リポジトリ管理者にコミットしてもらう
 1. 結果を`http://markdown-converter.s3-website-ap-northeast-1.amazonaws.com/artifacts/docs/{ファイル名(ディレクトリがあればそれも含める}.html` で確認する。
 
