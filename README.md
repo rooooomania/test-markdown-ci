@@ -22,7 +22,8 @@ mdファイルを編集する作業者がいるとする。この作業者がgit
 ![lambci-architecture](https://camo.githubusercontent.com/6c1a3528e4927b7a77417ae7565ad1b9d364d455/68747470733a2f2f6c616d6263692e73332e616d617a6f6e6177732e636f6d2f6173736574732f617263682e706e67)
 
 ### markdown directory
-ファイルを変換するのは簡単に行えるが、対象のフォルダ内のファイルを再帰的に操作するためのプログラム。cpsスタイルの標準ライブラリの機能をpromisifyしている。
+一つのファイルをhtmlに変換するのは簡単だが、あるフォルダ内全ての・・となると工夫が要る。
+作成したのは、対象のフォルダ内のファイルを再帰的に操作するためのプログラム。[cps](http://www.h4.dion.ne.jp/~unkai/js/js12.html)スタイルの標準ライブラリの機能をpromisifyしている。
 
 [こちら](https://www.npmjs.com/package/marked-directory)を参考にした。
 
