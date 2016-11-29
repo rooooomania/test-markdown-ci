@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.es6"],"names":[],"mappings":";;AAAA;;;;;;AAEA","file":"index.js","sourcesContent":["import md from './src/markdown-recursive';\n\nmd();\n"]}
+{"version":3,"sources":["index.es6"],"names":[],"mappings":";;AAAA;;;;;;AACA;;AAEA","file":"index.js","sourcesContent":["import md from './src/markdown-recursive';\nmd();\n\n// TODO: 初回のCfn実行時に、`./src/*, create_index.sh, index.js`などを目的のgithubリポジトリにプッシュしてしまう。\n\n"]}
